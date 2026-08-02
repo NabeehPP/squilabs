@@ -630,7 +630,6 @@ section {
   font-family: var(--font-mono);
   font-size: 12px;
   padding: 7px 13px;
-  border: 1px solid var(--border-strong);
   border-radius: 100px;
   color: var(--text-secondary);
 }
