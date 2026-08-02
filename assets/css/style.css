@@ -1437,4 +1437,12 @@ section {
   .topbar {
     padding: 20px var(--gutter);
   }
+  .sidebar-collapse-btn {
+    display: flex;
+    position: fixed;
+    top: 20px;
+    left: 16px;
+    right: auto;
+    z-index: 1001;
+  }
 }
