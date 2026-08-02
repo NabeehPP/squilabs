@@ -310,6 +310,7 @@ p {
   position: absolute;
   top: 40px;
   right: -13px;
+  z-index: 9999;
   width: 26px;
   height: 26px;
   border-radius: 50%;
