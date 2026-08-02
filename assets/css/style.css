@@ -619,19 +619,52 @@ section {
   align-items: end;
 }
 
+/* Services */
 .hero-tags {
   display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 28px;
+  justify-content: space-evenly; /* Spread evenly across the row */
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 60px;
 }
 
 .tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  flex: 1;
+  padding: 0;
+  border: none;
+  background: transparent;
+
   font-family: var(--font-mono);
-  font-size: 12px;
-  padding: 7px 13px;
-  border-radius: 100px;
+  font-size: 14px;
   color: var(--text-secondary);
+  text-align: center;
+  cursor: pointer;
+
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.tag svg {
+  width: 34px;
+  height: 34px;
+  stroke-width: 1.75;
+  color: var(--text-secondary);
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.tag:hover {
+  color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.tag:hover svg {
+  color: var(--accent);
+  transform: scale(1.08);
 }
 
 .hero-visual {
