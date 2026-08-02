@@ -98,11 +98,27 @@
     </section>
 
     <!-- PROJECT GRID -->
-    <section class="section-tight">
+       <section class="section-tight">
       <div class="container">
-
-        <div class="grid-3">
-
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Category</span>
+            <h2>All work</h2>
+          </div>
+        </div>
+ 
+        <!-- Sliding-indicator filter: a single pill track with one active
+             background that glides between tabs, rather than separate
+             per-button pills. Powered by initSegmentedFilter() in main.js. -->
+        <div class="segmented-filter reveal" data-segmented-filter>
+          <span class="segmented-filter-indicator" data-segmented-indicator></span>
+          <button class="segmented-filter-btn is-active" data-filter="all">All work</button>
+          <button class="segmented-filter-btn" data-filter="deck">Investor decks</button>
+          <button class="segmented-filter-btn" data-filter="branding">Branding</button>
+          <button class="segmented-filter-btn" data-filter="product">Product design</button>
+        </div>
+ 
+        <div class="grid-3" style="margin-top:36px;">
           <a href="project-momora.html" class="project-card reveal" style="--i:0">
             <div>
               <img src="assets/images/projects/momora/Momora Pitch Deck card cover.png">
