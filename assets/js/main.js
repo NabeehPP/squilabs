@@ -181,24 +181,48 @@ function initFaq() {
 }
 
 /* --------------------------------------------------------------------------
-   Projects page: category filter
+   Projects page: sliding-indicator category filter
    -------------------------------------------------------------------------- */
 function initProjectFilters() {
   const buttons = document.querySelectorAll("[data-filter]");
   const cards = document.querySelectorAll("[data-category]");
   if (!buttons.length || !cards.length) return;
-
+ 
+  const track = document.querySelector("[data-segmented-filter]");
+  const indicator = document.querySelector("[data-segmented-indicator]");
+ 
+  // Slide the pill indicator under whichever button is active, sized and
+  // positioned to that button's own box (not a fixed width).
+  function moveIndicator(btn) {
+    if (!track || !indicator) return;
+    const trackRect = track.getBoundingClientRect();
+    const btnRect = btn.getBoundingClientRect();
+    indicator.style.width = `${btnRect.width}px`;
+    indicator.style.transform = `translateX(${btnRect.left - trackRect.left}px)`;
+  }
+ 
+  const activeBtn = document.querySelector("[data-filter].is-active") || buttons[0];
+  // Measure after layout has settled (fonts, etc.) rather than on load.
+  requestAnimationFrame(() => moveIndicator(activeBtn));
+ 
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
       buttons.forEach((b) => b.classList.remove("is-active"));
       btn.classList.add("is-active");
+      moveIndicator(btn);
       const filter = btn.dataset.filter;
-
+ 
       cards.forEach((card) => {
         const match = filter === "all" || card.dataset.category === filter;
         card.style.display = match ? "" : "none";
       });
     });
+  });
+ 
+  // Keep the indicator aligned if the layout reflows (e.g. window resize).
+  window.addEventListener("resize", () => {
+    const current = document.querySelector("[data-filter].is-active");
+    if (current) moveIndicator(current);
   });
 }
 
