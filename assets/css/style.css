@@ -1371,7 +1371,12 @@ section {
     box-shadow: 30px 0 60px rgba(0, 0, 0, 0.5);
   }
   .sidebar-collapse-btn {
-    display: none;
+    display: flex;
+    position: fixed;
+    top: 20px;
+    left: 16px;
+    right: auto;
+    z-index: 1001;
   }
   .main {
     margin-left: 0;
