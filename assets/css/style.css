@@ -1356,6 +1356,14 @@ section {
   .clients-row {
     grid-template-columns: repeat(3, 1fr);
   }
+  .sidebar-collapse-btn {
+    display: flex;
+    position: fixed;
+    top: 20px;
+    left: 16px;
+    right: auto;
+    z-index: 1001;
+  }
 }
 
 @media (max-width: 860px) {
