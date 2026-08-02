@@ -309,7 +309,7 @@ p {
 .sidebar-collapse-btn {
   position: absolute;
   top: 40px;
-  right: -13px;
+  right: 8px;
   z-index: 9999;
   width: 26px;
   height: 26px;
