@@ -229,7 +229,7 @@ p {
   transition: width 0.3s var(--ease), transform 0.3s var(--ease);
 
   /* NEW: allow vertical scroll, hide horizontal */
-  overflow-y: auto;
+  overflow-y: visible;
   overflow-x: hidden;
 
   /* NEW: thin grey scrollbar (Firefox) */
