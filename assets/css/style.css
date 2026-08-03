@@ -626,6 +626,7 @@ section {
   align-items: flex-start;
   width: 100%;
   margin-top: 60px;
+  margin-bottom: 80px;
 }
 
 .tag {
@@ -646,33 +647,25 @@ section {
   text-align: center;
   cursor: pointer;
 
-  transition: transform 0.25s ease, color 0.25s ease;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+
+  transition: color .3s ease;
 }
 
 .tag svg {
   width: 34px;
   height: 34px;
-  stroke-width: 1.75;
-  color: var(--text-secondary);
-  transition: transform 0.25s ease, color 0.25s ease;
-}
-
-@keyframes float {
-  0%,100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
+  color: inherit;
 }
 
 .tag:hover {
-  color: var(--accent);
+  color: var(--text-primary);
 }
 
 .tag:hover svg {
-  animation: float 0.7s ease-in-out infinite;
-}
+  color: var(--text-primary);
+} 
 
 .hero-visual {
   border-radius: var(--radius-lg);

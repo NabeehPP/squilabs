@@ -295,3 +295,56 @@ function initYear() {
     el.textContent = new Date().getFullYear();
   });
 }
+
+/* --------------------------------------------------------------------------
+float effect for buttons
+   -------------------------------------------------------------------------- */
+document.querySelectorAll(".tag").forEach((tag) => {
+
+    const xTo = gsap.quickTo(tag, "x", {
+        duration: 0.45,
+        ease: "power3.out"
+    });
+
+    const yTo = gsap.quickTo(tag, "y", {
+        duration: 0.45,
+        ease: "power3.out"
+    });
+
+    const rotateTo = gsap.quickTo(tag, "rotation", {
+        duration: 0.45,
+        ease: "power3.out"
+    });
+
+    const scaleTo = gsap.quickTo(tag, "scale", {
+        duration: 0.35,
+        ease: "power2.out"
+    });
+
+    tag.addEventListener("mouseenter", () => {
+        scaleTo(1.04);
+    });
+
+    tag.addEventListener("mousemove", (e) => {
+
+        const rect = tag.getBoundingClientRect();
+
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+
+        xTo(x * 0.28);
+        yTo(y * 0.28);
+
+        rotateTo(x * 0.05);
+    });
+
+    tag.addEventListener("mouseleave", () => {
+
+        xTo(0);
+        yTo(0);
+        rotateTo(0);
+        scaleTo(1);
+
+    });
+
+});
