@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SquiLabs — Design Partner for Funded Teams</title>
+<meta name="description" content="SquiLabs is a design partner for founders — investor storytelling, brand identity, and product design for teams moving faster than their design bandwidth." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@100,200,300,400,500,700,800,900&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= FLOATING NAV ================= -->
+<header class="nav-float" id="navFloat">
+  <a href="index.html" class="nav-brand">
+    <img src="images/squilabs-mark.png" alt="SquiLabs logo">
+  </a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="blog.html">Journal</a>
+  </nav>
+  <div class="nav-actions">
+    <a href="contact.html" class="btn-gold" data-magnetic>Book a call</a>
+    <button class="nav-burger" id="navBurger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile full-screen menu -->
+<div class="nav-overlay" id="navOverlay">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="blog.html">Journal</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero-premium" id="heroPremium">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-mouse-glow" id="heroGlow2" aria-hidden="true"></div>
+
+    <!-- Signature element: three fanned "slide" cards behind the headline —
+         a literal reference to the decks SquiLabs actually builds. -->
+    <div class="hero-premium-inner">
+      <h1 class="display-xl">Strategic Design & Storytelling Partners for Businesses </h1>
+      <p class="hero-sub">SquiLabs builds the brand, product, and investor narrative for founders moving faster than their design bandwidth. ten people, no account managers, no hand-offs.</p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn-gold" data-magnetic>Start a project</a>
+        <a href="projects.html" class="btn-outline" data-magnetic>See the work</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-cue"><span></span>Scroll</div>
+  </section>
+
+  <!-- ================= PROOF MARQUEE ================= -->
+  <section class="proof-strip">
+    <p class="proof-label mono">Trusted by funds &amp; founders</p>
+    <div class="marquee">
+      <div class="marquee-track" data-marquee-track>
+        <span>Momora</span>
+        <span>Halcyon Pay</span>
+        <span>Verdant Grid</span>
+        <span>Runway CLI</span>
+        <span>Ledgerline</span>
+        <span>Aperture Travel</span>
+        <span>Kindling Learning</span>
+        <span>Ferrous Freight</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="section-premium" id="services">
+    <div class="wrap">
+      <div class="section-head-premium reveal">
+        <div>
+          <h2 class="display-lg">Three ways in.</h2>
+        </div>
+        <p class="lede-premium">Every engagement is scoped to move one metric: the one your next round depends on.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card-premium reveal" style="--i:0">
+          <span class="service-index mono">01</span>
+          <h3>Investor storytelling</h3>
+          <p>Pitch decks, memos, and data rooms built around the one number your round hinges on.</p>
+          <a href="services.html" class="service-link">Explore
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+        <article class="service-card-premium reveal" style="--i:1">
+          <span class="service-index mono">02</span>
+          <h3>Brand identity</h3>
+          <p>Name, mark, voice, and system — designed to survive contact with a Series B.</p>
+          <a href="services.html" class="service-link">Explore
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+        <article class="service-card-premium reveal" style="--i:2">
+          <span class="service-index mono">03</span>
+          <h3>Product design</h3>
+          <p>UI, UX, and design systems for teams shipping their first real release.</p>
+          <a href="services.html" class="service-link">Explore
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED WORK ================= -->
+  <section class="section-premium" id="work">
+    <div class="wrap">
+      <div class="section-head-premium reveal">
+        <div>
+          <h2 class="display-lg">Recent projects.</h2>
+        </div>
+        <p class="lede-premium">A sample of decks, brands, and products we've shipped for funded teams.</p>
+      </div>
+
+      <div class="work-filter-bar reveal" id="workFilterBar" role="tablist" aria-label="Filter work by category">
+        <button class="work-filter-btn is-active" data-filter="all" type="button">All work</button>
+        <button class="work-filter-btn" data-filter="investor-decks" type="button">Investor decks</button>
+        <button class="work-filter-btn" data-filter="branding" type="button">Branding</button>
+        <button class="work-filter-btn" data-filter="product-design" type="button">Product design</button>
+        <button class="work-filter-btn" data-filter="web" type="button">Web</button>
+      </div>
+
+      <div class="work-grid" id="workGrid">
+
+        <a href="project-momora.html" class="work-card reveal" data-category="investor-decks">
+          <div class="work-card-media">
+            <img src=\images\projects\momora\momora.jpg" alt="Momora">
+          </div>
+          <div class="work-card-body">
+            <span class="work-tag">Investor Deck</span>
+            <h3>Momora</h3>
+            <p>Complete investor presentation with premium storytelling, visuals and product strategy.</p>
+            <span class="work-link">View Project →</span>
+          </div>
+        </a>
+
+        <a href="project-2.html" class="work-card reveal d1" data-category="branding">
+          <div class="work-card-media">
+            <img src="images/project2.jpg" alt="">
+          </div>
+          <div class="work-card-body">
+            <span class="work-tag">Branding</span>
+            <h3>Project Two</h3>
+            <p>Short description of the project.</p>
+            <span class="work-link">View Project →</span>
+          </div>
+        </a>
+
+        <a href="project-3.html" class="work-card reveal d2" data-category="web">
+          <div class="work-card-media">
+            <img src="images/project3.jpg" alt="">
+          </div>
+          <div class="work-card-body">
+            <span class="work-tag">Website</span>
+            <h3>Project Three</h3>
+            <p>Short description of the project.</p>
+            <span class="work-link">View Project →</span>
+          </div>
+        </a>
+
+        <a href="project-4.html" class="work-card reveal d3" data-category="product-design">
+          <div class="work-card-media">
+            <img src="images/project4.jpg" alt="">
+          </div>
+          <div class="work-card-body">
+            <span class="work-tag">Product Design</span>
+            <h3>Project Four</h3>
+            <p>Short description of the project.</p>
+            <span class="work-link">View Project →</span>
+          </div>
+        </a>
+
+      </div>
+
+      <p class="work-empty" id="workEmpty" hidden>No projects in this category yet.</p>
+    </div>
+  </section>
+
+  <!-- ================= PROCESS ================= -->
+  <section class="section-premium">
+    <div class="wrap">
+      <div class="section-head-premium reveal">
+        <div>
+          <h2 class="display-lg">The process</h2>
+        </div>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step reveal" style="--i:0">
+          <span class="process-num mono">01</span>
+          <h4>Intro call</h4>
+          <p>30 minutes to understand your stage, your timeline, and the outcome the design needs to drive.</p>
+        </div>
+        <div class="process-step reveal" style="--i:1">
+          <span class="process-num mono">02</span>
+          <h4>Scope &amp; sprint plan</h4>
+          <p>A fixed quote and a week-by-week plan before anything is billed. No hourly surprises.</p>
+        </div>
+        <div class="process-step reveal" style="--i:2">
+          <span class="process-num mono">03</span>
+          <h4>Design sprints</h4>
+          <p>We work in your Slack, sharing drafts every 2–3 days instead of a big reveal at the end.</p>
+        </div>
+        <div class="process-step reveal" style="--i:3">
+          <span class="process-num mono">04</span>
+          <h4>Handoff</h4>
+          <p>Source files, a usage guideline, and a walkthrough so your team can extend the work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY CHOOSE US ================= -->
+  <section class="section-premium" id="about">
+    <div class="wrap">
+      <div class="section-head-premium reveal">
+        <div>
+          <h2 class="display-lg">Built for the calendar you have.</h2>
+        </div>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal" style="--i:0">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L4.5 12.5H11L9 22l9.5-11H12z"/></svg>
+          <h4>Speed over polish</h4>
+          <p>A good deck two weeks before your board meeting beats a perfect one after it.</p>
+        </div>
+        <div class="why-card reveal" style="--i:1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg>
+          <h4>Clarity over cleverness</h4>
+          <p>If a slide needs a paragraph to explain, it's not done. We push toward the plainest truth.</p>
+        </div>
+        <div class="why-card reveal" style="--i:2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z"/></svg>
+          <h4>Ownership over hours</h4>
+          <p>You'll never see a line-item timesheet. We quote the outcome, not the hours to get there.</p>
+        </div>
+        <div class="why-card reveal" style="--i:3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 12h8M12 8v8"/><circle cx="12" cy="12" r="9"/></svg>
+          <h4>Direct access</h4>
+          <p>You work with the same four or five people from kickoff to handoff — no rotating account team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="section-premium">
+    <div class="wrap">
+      <div class="section-head-premium reveal" style="justify-content:center; text-align:center; flex-direction:column; align-items:center;">
+        <h2 class="display-lg">What it's like to work with us</h2>
+      </div>
+
+      <div class="testimonial-rotator reveal" id="testimonialRotator">
+        <div class="testimonial-slide is-active" data-slide>
+          <p class="testimonial-quote-lg">"They cut our deck from 40 slides to 14 and we closed the round two weeks later."</p>
+          <div class="testimonial-who-lg">
+            <span class="avatar-gold">MK</span>
+            <div><strong>Mira Kessler</strong><span>CEO, Halcyon Pay</span></div>
+          </div>
+        </div>
+        <div class="testimonial-slide" data-slide>
+          <p class="testimonial-quote-lg">"SquiLabs felt like an in-house design team that happened to bill by the sprint."</p>
+          <div class="testimonial-who-lg">
+            <span class="avatar-gold">DO</span>
+            <div><strong>Daniel Osei</strong><span>Founder, Verdant Grid</span></div>
+          </div>
+        </div>
+        <div class="testimonial-slide" data-slide>
+          <p class="testimonial-quote-lg">"Our product finally looks as serious as our roadmap. Worth every sprint."</p>
+          <div class="testimonial-who-lg">
+            <span class="avatar-gold">JL</span>
+            <div><strong>Jae Lindqvist</strong><span>CTO, Runway CLI</span></div>
+          </div>
+        </div>
+        <div class="testimonial-dots" data-testimonial-dots></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="section-premium">
+    <div class="wrap">
+      <div class="cta-premium-panel reveal">
+        <h2 class="display-lg">Let's design your next chapter.</h2>
+        <a href="contact.html" class="btn-gold" data-magnetic>Book an intro call</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer-premium">
+  <div class="wrap">
+    <div class="footer-premium-top">
+      <div class="footer-brand">
+        <div class="footer-brand-mark">
+          <img src="data:image/jpeg;base64,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" alt="SquiLabs logo">
+          <span>SquiLabs</span>
+        </div>
+        <p>A design partner for founders — investor storytelling, brand identity, and product design. SF &amp; Lisbon.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Studio</h5>
+        <a href="index.html">Home</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <a href="blog.html">Journal</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-newsletter">
+        <h5>Stay in touch</h5>
+        <p style="font-size:13.5px; color:var(--text-tertiary); margin-bottom:14px;">One email a month, no fluff.</p>
+        <form onsubmit="return false;">
+          <input type="email" placeholder="Enter email address" aria-label="Email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-premium-bottom">
+      <span>© <span data-year></span> SquiLabs. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="#">LinkedIn</a>
+        <a href="#">X</a>
+        <a href="#">Dribbble</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ==========================================================================
+   SQUILABS — premium-home.js
+   Motion layer for the redesigned homepage only. Vanilla JS, no
+   dependencies. Every function checks its own elements exist first, so
+   this file is safe to include on pages that don't have every section.
+   ========================================================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+  initNavScroll();
+  initMobileNav();
+  initReveal();
+  initMagnetic();
+  initMouseGlow();
+  initParallax();
+  initMarqueeClone();
+  initTestimonialRotator();
+  initWorkFilter();
+  initYear();
+});
+
+/* --------------------------------------------------------------------------
+   Floating nav: solidify background + shadow once the page has scrolled
+   past the hero glow, so it reads clearly over any section behind it.
+   -------------------------------------------------------------------------- */
+function initNavScroll() {
+  const nav = document.getElementById("navFloat");
+  if (!nav) return;
+
+  const onScroll = () => {
+    nav.classList.toggle("is-scrolled", window.scrollY > 40);
+  };
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+}
+
+/* --------------------------------------------------------------------------
+   Mobile nav: full-screen overlay, staggered link entrance handled by CSS
+   transition-delay set inline per link.
+   -------------------------------------------------------------------------- */
+function initMobileNav() {
+  const burger = document.getElementById("navBurger");
+  const overlay = document.getElementById("navOverlay");
+  if (!burger || !overlay) return;
+
+  const links = overlay.querySelectorAll("a");
+  links.forEach((link, i) => {
+    link.style.transitionDelay = `${i * 60}ms`;
+  });
+
+  function open() {
+    overlay.classList.add("is-open");
+    document.body.classList.add("nav-locked");
+  }
+  function close() {
+    overlay.classList.remove("is-open");
+    document.body.classList.remove("nav-locked");
+  }
+
+  burger.addEventListener("click", () => {
+    overlay.classList.contains("is-open") ? close() : open();
+  });
+  links.forEach((link) => link.addEventListener("click", close));
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") close();
+  });
+}
+
+/* --------------------------------------------------------------------------
+   Fade-up reveal on scroll, staggered via the --i custom property already
+   set inline on each element in the HTML.
+   -------------------------------------------------------------------------- */
+function initReveal() {
+  const items = document.querySelectorAll(".reveal");
+  if (!items.length) return;
+
+  if (!("IntersectionObserver" in window)) {
+    items.forEach((el) => el.classList.add("is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+  );
+
+  items.forEach((el) => observer.observe(el));
+}
+
+/* --------------------------------------------------------------------------
+   Magnetic buttons: elements pull gently toward the cursor while it's
+   within a small radius around them, and spring back on leave. Skipped
+   entirely for reduced-motion and on coarse (touch) pointers, where a
+   hover-based effect has no meaning.
+   -------------------------------------------------------------------------- */
+function initMagnetic() {
+  const targets = document.querySelectorAll("[data-magnetic]");
+  if (!targets.length) return;
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const isCoarsePointer = window.matchMedia("(pointer: coarse)").matches;
+  if (reduceMotion || isCoarsePointer) return;
+
+  const strength = 0.35; // fraction of the offset actually applied
+
+  targets.forEach((el) => {
+    el.addEventListener("mousemove", (e) => {
+      const rect = el.getBoundingClientRect();
+      const offsetX = e.clientX - (rect.left + rect.width / 2);
+      const offsetY = e.clientY - (rect.top + rect.height / 2);
+      el.style.transform = `translate(${offsetX * strength}px, ${offsetY * strength}px)`;
+    });
+    el.addEventListener("mouseleave", () => {
+      el.style.transform = "translate(0, 0)";
+    });
+  });
+}
+
+/* --------------------------------------------------------------------------
+   Mouse-reactive glow in the hero: updates CSS custom properties rather
+   than inline background position, so the actual paint stays on the
+   compositor and doesn't jank the scroll.
+   -------------------------------------------------------------------------- */
+function initMouseGlow() {
+  const hero = document.getElementById("heroPremium");
+  const glow = document.getElementById("heroGlow2");
+  if (!hero || !glow) return;
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduceMotion) return;
+
+  let ticking = false;
+  let lastX = 0;
+  let lastY = 0;
+
+  hero.addEventListener("mousemove", (e) => {
+    const rect = hero.getBoundingClientRect();
+    lastX = ((e.clientX - rect.left) / rect.width) * 100;
+    lastY = ((e.clientY - rect.top) / rect.height) * 100;
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        glow.style.setProperty("--mx", `${lastX}%`);
+        glow.style.setProperty("--my", `${lastY}%`);
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+}
+
+/* --------------------------------------------------------------------------
+   Soft parallax on the hero's deck-fan cards while scrolling — a subtle
+   depth cue, capped and throttled to rAF so it stays smooth.
+   -------------------------------------------------------------------------- */
+function initParallax() {
+  const fan = document.querySelector(".deck-fan");
+  if (!fan) return;
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduceMotion) return;
+
+  let ticking = false;
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const offset = Math.min(window.scrollY * 0.12, 60);
+        fan.style.transform = `translate(-50%, calc(-50% + ${offset}px))`;
+        ticking = false;
+      });
+    },
+    { passive: true }
+  );
+}
+
+/* --------------------------------------------------------------------------
+   Marquee: duplicate the track content once so the CSS scroll animation
+   (translateX 0 → -50%) loops seamlessly with no visible seam.
+   -------------------------------------------------------------------------- */
+function initMarqueeClone() {
+  const track = document.querySelector("[data-marquee-track]");
+  if (!track) return;
+  track.innerHTML += track.innerHTML;
+}
+
+/* --------------------------------------------------------------------------
+   Testimonial rotator: crossfades between slides, auto-advances, pauses
+   on hover/focus, and supports direct navigation via the dots.
+   -------------------------------------------------------------------------- */
+function initTestimonialRotator() {
+  const root = document.getElementById("testimonialRotator");
+  if (!root) return;
+
+  const slides = Array.from(root.querySelectorAll("[data-slide]"));
+  const dotsWrap = root.querySelector("[data-testimonial-dots]");
+  if (!slides.length || !dotsWrap) return;
+
+  let index = 0;
+  let timer = null;
+  const interval = 6000;
+
+  const dots = slides.map((_, i) => {
+    const dot = document.createElement("button");
+    dot.setAttribute("aria-label", `Show testimonial ${i + 1}`);
+    if (i === 0) dot.classList.add("is-active");
+    dot.addEventListener("click", () => goTo(i));
+    dotsWrap.appendChild(dot);
+    return dot;
+  });
+
+  function goTo(i) {
+    slides[index].classList.remove("is-active");
+    dots[index].classList.remove("is-active");
+    index = (i + slides.length) % slides.length;
+    slides[index].classList.add("is-active");
+    dots[index].classList.add("is-active");
+  }
+
+  function start() {
+    stop();
+    timer = setInterval(() => goTo(index + 1), interval);
+  }
+  function stop() {
+    if (timer) clearInterval(timer);
+  }
+
+  root.addEventListener("mouseenter", stop);
+  root.addEventListener("mouseleave", start);
+  root.addEventListener("focusin", stop);
+  root.addEventListener("focusout", start);
+
+  start();
+}
+
+/* --------------------------------------------------------------------------
+   Featured work filter: toggles which work cards are visible based on the
+   active filter pill. Purely presentational — filtering happens client
+   side against each card's data-category attribute.
+   -------------------------------------------------------------------------- */
+function initWorkFilter() {
+  const bar = document.getElementById("workFilterBar");
+  const grid = document.getElementById("workGrid");
+  if (!bar || !grid) return;
+
+  const buttons = Array.from(bar.querySelectorAll("[data-filter]"));
+  const cards = Array.from(grid.querySelectorAll("[data-category]"));
+  const empty = document.getElementById("workEmpty");
+
+  function applyFilter(filter) {
+    let visibleCount = 0;
+    cards.forEach((card) => {
+      const match = filter === "all" || card.dataset.category === filter;
+      card.classList.toggle("is-hidden", !match);
+      if (match) visibleCount++;
+    });
+    if (empty) empty.hidden = visibleCount !== 0;
+  }
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      buttons.forEach((b) => b.classList.remove("is-active"));
+      btn.classList.add("is-active");
+      applyFilter(btn.dataset.filter);
+    });
+  });
+}
+
+/* --------------------------------------------------------------------------
+   Footer year
+   -------------------------------------------------------------------------- */
+function initYear() {
+  document.querySelectorAll("[data-year]").forEach((el) => {
+    el.textContent = new Date().getFullYear();
+  });
+}
+
+</script>
+</body>
+</html>
