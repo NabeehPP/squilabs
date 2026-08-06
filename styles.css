@@ -1528,6 +1528,13 @@ body.nav-locked {
   .case-cta-grid-premium {
     grid-template-columns: 1fr;
   }
+
+  .hero-premium-inner .display-xl{
+    font-size: 36px;
+    padding-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 600px;
+  }
 }
 
 @media (max-width: 860px) {
@@ -1625,12 +1632,6 @@ body.nav-locked {
     right: 10px;
   }
 
-  .hero-premium-inner .display-xl{
-    font-size: 36px;
-    padding-bottom: 20px;
-    line-height: 1.2;
-    font-weight: 600px;
-  }
 }
 
 @media (max-width: 560px) {
