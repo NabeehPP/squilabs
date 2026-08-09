@@ -509,7 +509,7 @@ body.nav-locked {
 .hero-sub {
   margin-top: 26px;
   font-size: clamp(16px, 1.6vw, 19px);
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.9);
   max-width: 55ch;
   line-height: 1.7;
   font-weight: 600;
