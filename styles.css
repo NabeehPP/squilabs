@@ -463,7 +463,7 @@ body.nav-locked {
   width: 960px;
   height: 520px;
   transform: translate(-50%, 0);
-  background: radial-gradient(circle, rgba(31,102,255,.38), transparent 65%);
+  background: radial-gradient(circle, rgba(31,102,255,.1), transparent 65%);
   filter: blur(10px);
   pointer-events: none;
   z-index: 0;
