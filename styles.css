@@ -1179,7 +1179,6 @@ body.nav-locked {
   color: var(--accent);
 }
 .footer-premium-top::before {
-  background: radial-gradient(circle, rgba(220,235,255,.92) 0%, rgba(31,102,255,.85) 12%, rgba(9,43,141,.52) 34%, transparent 67%);
   content: "";
   position: absolute;
   pointer-events: none;
