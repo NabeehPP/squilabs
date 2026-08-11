@@ -726,7 +726,40 @@ body.nav-locked {
   color: #fff;
   transform: scale(1.04);
 }
+.service-card-premium {
+  position: relative;
+  overflow: hidden;
 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Background images */
+.service-card-1 {
+  background-image: url("images/pitch deck.jpeg");
+}
+
+.service-card-2 {
+  background-image: url("images/brand identity.jpeg");
+}
+
+.service-card-3 {
+  background-image: url("images/web.jpeg");
+}
+
+.service-card-premium::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+.service-card-premium > * {
+  position: relative;
+  z-index: 1;
+}
 /* ==========================================================================
    Featured work
    ========================================================================== */
