@@ -653,7 +653,6 @@ body.nav-locked {
 .service-card-premium {
   position: relative;
   background: var(--card);
-  border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 38px 32px;
   transition: transform 0.4s var(--ease), border-color 0.4s var(--ease), background 0.4s var(--ease);
