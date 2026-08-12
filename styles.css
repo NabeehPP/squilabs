@@ -2071,7 +2071,7 @@ body.nav-locked {
     top: 20px;
     left: 50%;
 
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     max-width: none;
 
     height: 74px;
