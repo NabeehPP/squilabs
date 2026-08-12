@@ -2115,6 +2115,8 @@ body.nav-locked {
     border-radius: 13px;
 
     box-sizing: border-box;
+
+   left-padding:10px
   }
 
 
