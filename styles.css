@@ -1934,6 +1934,123 @@ body.nav-locked {
   }
 }
 
+@media (max-width: 860px) {
+
+  /* Remove the big outer navbar box */
+  .nav-float {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+    padding: 0 10px;
+
+    background: transparent;
+    border: none;
+    box-shadow: none;
+
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+
+    border-radius: 0;
+
+    transform: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 1000;
+  }
+
+
+  /* LEFT LOGO BOX */
+  .nav-brand {
+    width: 76px;
+    height: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 28px;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-sizing: border-box;
+  }
+
+
+  /* Logo image */
+  .nav-brand img {
+    width: 42px;
+    height: 42px;
+
+    padding: 0;
+    border-radius: 0;
+
+    object-fit: contain;
+  }
+
+
+  /* If your logo is text */
+  .nav-brand span {
+    display: none;
+  }
+
+
+  /* Hide desktop links */
+  .nav-links {
+    display: none;
+  }
+
+
+  /* RIGHT MENU BUTTON */
+  .nav-burger {
+    display: flex;
+
+    width: 76px;
+    height: 76px;
+
+    padding: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 28px;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-sizing: border-box;
+  }
+
+
+  .nav-burger span {
+    width: 24px;
+    height: 2px;
+
+    background: #fff;
+
+    margin: 3px 0;
+  }
+
+
+  /* Hide desktop CTA */
+  .nav-actions .btn-gold {
+    display: none;
+  }
+
+}
+
 @media (max-width: 780px) {
   .work-grid {
     grid-template-columns: repeat(2, 1fr);
