@@ -1346,11 +1346,9 @@ body.nav-locked {
    Footer
    ========================================================================== */
 .footer-premium {
-  border-top: 1px solid var(--border);
   padding-top: 0;
   background: linear-gradient(90deg, #050507 0%, #050507 34%, #1a1b20 34%, #111214 100%);
   margin: 44px auto 0;
-  border: 1px solid rgba(255,255,255,.14);
   border-radius: 40px 40px 0 0;
   overflow: hidden;
   position: relative;
