@@ -2121,7 +2121,6 @@ body.nav-locked {
   .nav-brand img {
     width: 42px;
     height: 42px;
-
     padding: 0;
     object-fit: contain;
   }
@@ -2171,8 +2170,15 @@ body.nav-locked {
     background: #fff;
   }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
 
-  .nav-actions {
-    display: none;
-  }
+.nav-actions .btn-gold {
+  display: none;
+}
 }
