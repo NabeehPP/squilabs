@@ -2100,8 +2100,8 @@ body.nav-locked {
   /* LEFT BUTTON */
 
   .nav-brand {
-    width: 74px;
-    height: 74px;
+    width: 60px;
+    height: 60px;
 
     margin: 0;
 
@@ -2141,8 +2141,8 @@ body.nav-locked {
   /* RIGHT BUTTON */
 
   .nav-burger {
-    width: 74px;
-    height: 74px;
+    width: 60px;
+    height: 60px;
 
     margin: 0;
     padding: 0;
@@ -2181,4 +2181,13 @@ body.nav-locked {
 .nav-actions .btn-gold {
   display: none;
 }
+  .nav-float,
+  .nav-float.is-scrolled {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
 }
