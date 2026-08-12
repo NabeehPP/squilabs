@@ -864,7 +864,7 @@ body.nav-locked {
 ================================ */
 
 .service-card-premium h3 {
-  margin: 0 0 20px;
+  margin: 0 0 14px;
 
   color: #f2f2f2;
 
@@ -887,10 +887,10 @@ body.nav-locked {
 
   color: #969696;
 
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
 
-  line-height: 1.65;
+  line-height: 1.5;
   letter-spacing: -0.01em;
 }
 
@@ -903,10 +903,10 @@ body.nav-locked {
   display: flex;
   flex-direction: column;
 
-  gap: 13px;
+  gap: 10px;
 
   margin: auto 0 0;
-  padding: 30px 0 0;
+  padding: 22px 0 0;
 
   list-style: none;
 }
@@ -914,7 +914,7 @@ body.nav-locked {
 .service-list li {
   position: relative;
 
-  padding-left: 18px;
+  padding-left: 15px;
 
   color: #a7a7a7;
 
