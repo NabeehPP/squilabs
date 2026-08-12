@@ -2111,8 +2111,8 @@ body.nav-locked {
 
     background: rgba(0, 15, 30, 0.8);
 
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: 26px;
+    border: 0.5px solid rgba(255, 255, 255, 0.14);
+    border-radius: 13px;
 
     box-sizing: border-box;
   }
@@ -2154,8 +2154,8 @@ body.nav-locked {
 
     background: rgba(0, 15, 30, 0.8);
 
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: 26px;
+    border: 0.5px solid rgba(255, 255, 255, 0.14);
+    border-radius: 13px;
 
     box-sizing: border-box;
   }
