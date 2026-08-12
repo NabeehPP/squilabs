@@ -2120,13 +2120,6 @@ body.nav-locked {
     object-fit: contain;
   }
 
-
-  /* If your logo is text */
-  .nav-brand span {
-    display: none;
-  }
-
-
   /* Hide desktop links */
   .nav-links {
     display: none;
@@ -2154,7 +2147,7 @@ body.nav-locked {
     -webkit-backdrop-filter: blur(12px);
 
     box-sizing: border-box;
-    left-padding: 10px;
+    left-padding: 40px;
   }
 
 
