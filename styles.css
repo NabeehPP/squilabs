@@ -2154,6 +2154,7 @@ body.nav-locked {
     -webkit-backdrop-filter: blur(12px);
 
     box-sizing: border-box;
+    left-padding: 10px;
   }
 
 
@@ -2164,7 +2165,6 @@ body.nav-locked {
     background: #fff;
 
     margin: 3px 0;
-    left-padding: 10px;
   }
 
 
